@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, Margin & Padding Demo in CSS</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: cadetblue;
+        }
+
+        .mainContainer{
+            background-color:rgb(83, 111, 84);
+            border: 2px solid rgb(224, 31, 47);
+
+            /* We can set margin/padding for  top, bottom, left and right */
+            /* padding-top: 30px;
+            padding-bottom: 40px;
+            padding-left: 45px; 
+            padding-right: 35px; */
+
+            /* margin-top: 10px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            margin-right:15px ; */
+
+            /* margin = top right bottom left;  */
+            /* margin: 20px 35px 40px 60px;   */
+
+            /* padding = top right bottom left;  */
+            /* padding: 30px 45px 41px 34px;   */
+            
+        
+            /* padding: y(top/bottom) x(left/right); */
+            /* padding: 45px 25px; */
+
+            /* margin: y(top/bottom) x(left/right); */
+            /* margin: 40px 30px; */
+
+            padding: 45px 25px;   
+            margin: 40px 30px;        
+            border-radius: 15px;
+            width: 550;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="align-content: center; justify-content: center; text-align: center;">Box Model, Margin & Padding Demo in
+        CSS</h1><br><br>
+
+    <ul>The element is in the center surrounded by padding, border and margin.
+
+        These parts can be explained as-
+        <li>Content- The content of the box, where text and images appear.</li>
+        <li>Padding- It clears an area around the content. The padding is transparent.</li>
+        <li>Border- A border is one that covers the padding and content.</li>
+        <li>Margin- It clears an area outside the border. The margin is also transparent.</li>
+    </ul>
+    <br><br>
+    <hr>
+    <div class="mainContainer">
+        <h3>I am inside h3 Tag</h3>
+        <p id="paraOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ratione.</p>
+    </div><br>
+
+    <div class="mainContainer">
+        <h3>I am inside h3 Tag</h3>
+        <p id="paraTwo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, facere!</p>
+    </div><br>
+
+    <div class="mainContainer">
+        <h3>I am inside h3 Tag</h3>
+        <p id="paraThree">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, magni?</p>
+    </div><br>
+
+</body>
+
+</html>

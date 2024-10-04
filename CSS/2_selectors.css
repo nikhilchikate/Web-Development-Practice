@@ -1,0 +1,23 @@
+p {
+    color: skyblue;
+}
+
+#paraOne {
+    color: green;
+}
+
+#paraTwo {
+    color: red;
+}
+
+.redClass,
+.yellowBg {
+    color: red;
+    background-color: yellow;
+}
+
+footer,
+span {
+    Background-color: aqua;
+    color: black;
+}

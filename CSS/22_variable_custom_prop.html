@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Custom Property Demo</title>
+    <style>
+        :root {
+            --primary-color: yellow;
+            --nature-color: green;
+            --maxw: 350px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 3px solid var(--nature-color);
+            box-shadow: 3px 3px var(--box-color);
+            margin: 3px 10px;
+        }
+
+        .mainContainer {
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--nature-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

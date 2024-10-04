@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Demo</title>
+    <style>
+        .box {
+            font-size: 80px;
+            text-align: center;
+            background-color: olive;
+            color: white;
+            display: none;
+        }
+
+         @media only screen and (max-width:250px){
+            #box-1{
+                display: block;
+                background-color: seagreen;
+            }
+        }
+
+        @media only screen and (min-width: 250px) and (max-width:550px) {
+            #box-2{
+                display: block;
+                background-color: gold;
+            }
+        }
+
+        @media (min-width: 550px) and (max-width:850px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: orangered;
+            }
+        }
+
+        @media (min-width: 850px)  {
+            #box-4{
+                display: block;
+                background-color: pink;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">Linux</div>
+    <div class="box" id="box-2">Microsoft</div>
+    <div class="box" id="box-3">Android</div>
+    <div class="box" id="box-4">LG OS</div>
+</body>
+
+</html>

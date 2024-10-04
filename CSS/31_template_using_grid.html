@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Creating Layouts Using Grid Template Area</title>
+    <style>
+        .mainContainer {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'aside1 section section aside2'
+                'footer footer footer footer ';
+        }
+
+        .item {
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside1 {
+            grid-area: aside1;
+        }
+
+        #aside2 {
+            grid-area: aside2;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div id="navbar" class="item">
+            Home Services Gallary Contact
+        </div>
+
+        <div id="aside1" class="item">Not only does fruit aid in good physical health, but it also provides benefits for
+            good mental health. Fruit makes weight loss more efficient and heightens brain functions. Eating a healthy
+            amount of fruit improves the ability for the body to lose weight. Fruit contains eighty percent water just
+            like the human body.
+        </div>
+
+        <div id="section" class="item">
+            ‘Food is a source of energy for every living being. Even plants require food in the form of sunlight, water,
+            and minerals from the soil. As humans, we all want to eat our favorite and most delicious food, which is
+            mostly unhealthy. Healthy food, on the other hand, is not preferred by all, as some people don’t consider it
+            tasty. Healthy food is known for its rich fiber and protein content. There are several benefits of eating
+            healthy food, which are very important for our growth, body functioning and to live a sustained life.’
+
+            ‘A healthy diet is generally a balanced diet of proteins, carbohydrates, fats, minerals and vitamins.
+            Proteins and fats are required for energy, carbohydrates support our bodily functions and physical activity,
+            and vitamins and minerals help boost the immune system, and support normal growth and development.’
+        </div>
+
+        <div id="aside2" class="item">Eating vegetables regularly is important for maintaining good overall health and
+            reducing the risk of chronic diseases like diabetes, heart disease, and cancer. Vegetables are rich in
+            dietary fiber, which is essential for gut health, preventing constipation, and lower the risk of colon
+            cancer.
+        </div>
+
+        <footer class="item">CopyRight 2024 | All Rights Reserved
+        </footer>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & Text Shadow</title>
+    <style>
+        .mainContainer {
+            display: flex;
+            /* flex-direction: row; */
+        }
+
+        .card {
+            padding: 20px 10px;
+            margin: 20px 10px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+            /* box-shadow: 10px 13px red; */
+            /* box-shadow: -10px -13px red; */
+            /* box-shadow: 7px 5px 10px red; */
+            /* box-shadow: -7px -5px 10px red; */
+            /* box-shadow: -7px -5px 10px 34px red; */
+            /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+            /* box-shadow: inset 3px 5px red; */
+
+            box-shadow: 3px 5px green, 4px 6px red;
+        }
+
+        .card h2 {
+            /* text-shadow: 3px 4px red; */
+            /* text-shadow: 3px 2px 2px white; */
+            text-shadow: -3px -2px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+    <div class="card" id="card-1">
+        <h2>Fruits</h2>
+        <p>Fruits are the sweet, edible part of a flowering plant that contains seeds. They are a vital part of a
+            healthy diet and are a good source of vitamins, minerals, fiber, and antioxidants.</p>
+    </div>
+    <div class="card" id="card-2">
+        <h2>Vegetables</h2>
+        <p>Vegetables are good sources of minerals, especially calcium and iron, and vitamins, principally A and C.
+            Nearly all vegetables are rich in dietary fibre and antioxidants. Vegetables are usually classified on the
+            basis of the part of the plant that is used for food.</p>
+    </div>
+    <div class="card" id="card-3">
+        <h2>Frozen Food</h2>
+        <p>Freezing food slows decomposition by turning residual moisture into ice, inhibiting the growth of most
+            bacterial species. In the food commodity industry, there are two processes: mechanical and cryogenic (or
+            flash freezing). The freezing kinetics is important to preserve the food quality and texture.</p>
+    </div>
+    </div>
+</body>
+
+</html>

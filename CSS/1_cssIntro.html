@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intro</title>
+
+    <style>
+        ul li {
+            color: rgb(182, 84, 89);
+            /* background-color: rgb(46, 180, 216) !important; */
+        }
+
+        p {
+            color: blueviolet;
+            font-family: cursive;
+        }
+    </style>
+
+    <link rel="stylesheet" href="1_cssIntro.css">
+</head>
+
+<body>
+    <h1>CSS Intro</h1>
+    <p style="color: red; background-color: yellow;">Demo text for css</p>
+    <ul>
+        <li>Inline CSS- CSS is added to the elements directly using the style attributes.</li>
+        <li>Internal CSS- CSS is kept inside the head tags in style tags </li>
+        <li>External CSS- CSS is kept separately inside a .CSS style sheet. It involves two steps-
+            <ul>
+                <li>First, write the CSS in.CSS file.</li>
+                <li>Include that CSS file to Markup.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>The point here to remember is that whether it is the Internal CSS or the External CSS, whichever is written
+        after, gets the priority. But if you want that first one should get priority, so you can add important after it.
+        The result will be, it will get the most priority of all.</p>
+</body>
+
+</html>

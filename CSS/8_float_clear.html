@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear Demo</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 1000px;
+            border: 2px solid rgb(236, 17, 53);
+            background-color: rgb(241, 169, 106);
+            margin: 30px auto;
+        }
+
+        .item {
+            border: 4px solid grey;
+            margin: 15px 5px;
+            padding: 10px 5px;
+            background: rgb(74, 69, 69);
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #vegetable {
+            float: right;
+            width: 48%;
+        }
+
+
+        #seasonal {
+            /* float: left; */
+            clear: both;
+            clear: left;
+            width: 99%;
+        }
+
+        #imported {
+            /* float: left; */
+            clear: both;
+            clear: right;
+            width: 99%;
+        }
+
+        
+        p {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h1 {
+            margin: 25px auto;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Float & Clear Demo</h1>
+    <div class="container">
+        <h2>Welcome to my Store</h2>
+
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Fruits are nature's colorful, nutrient-rich gifts, bursting with flavor and
+                health benefits. They come in various shapes, sizes, and textures, from juicy berries to tropical
+                delights like mangoes and pineapples. Packed with vitamins, minerals, and antioxidants, fruits play a
+                vital role in a balanced diet, supporting immune function, digestion, and heart health. Their natural
+                sweetness makes them a perfect snack or addition to meals, encouraging healthier eating habits while
+                providing hydration and energy. Enjoying a diverse range of fruits can enhance overall well-being and
+                introduce exciting tastes to our plates.</p>
+        </div>
+        <div id="vegetable" class="item">
+            <h3>Vegetables</h3>
+            <p id="vegetablepara" class="para">Vegetables are essential components of a healthy diet, offering a wide
+                array of flavors, textures, and colors. Rich in vitamins, minerals, and fiber, they contribute to
+                overall health by supporting digestion, reducing the risk of chronic diseases, and enhancing immune
+                function. From leafy greens like spinach and kale to vibrant peppers and root vegetables like carrots
+                and beets, each type brings unique nutrients and benefits. Incorporating a variety of vegetables into
+                meals not only boosts nutritional value but also adds depth and creativity to cooking, making healthy
+                eating both enjoyable and delicious.</p>
+        </div>
+        <div id="seasonal" class="item">
+            <h3>Seasonal fruits and vegetables</h3>
+            <p id="seasonalpara" class="para">Seasonal fruits and vegetables offer the freshest flavors and highest
+                nutritional value, as they are harvested at their peak ripeness. Eating in sync with the seasons not
+                only enhances taste but also supports local agriculture and reduces environmental impact. For instance,
+                spring brings tender asparagus and sweet strawberries, while summer offers juicy peaches and vibrant
+                tomatoes. Autumn is the time for crisp apples and hearty squash, and winter features citrus fruits and
+                root vegetables. Embracing seasonal produce can inspire culinary creativity, making each meal a
+                celebration of nature's bounty throughout the year.</p>
+        </div>
+        <div id="imported" class="item">
+            <h3>Imported fruits and vegetables</h3>
+            <p id="importedpara" class="para">Imported fruits and vegetables expand our culinary options by bringing
+                diverse flavors and textures from around the globe. These products allow consumers to enjoy exotic
+                varieties, such as tropical mangoes, avocados, and kiwi, regardless of the local growing season. While
+                they can enhance diets with new tastes and nutrients, importing often involves long transportation
+                times, which can impact freshness and environmental sustainability. It’s important to balance the
+                enjoyment of imported produce with an appreciation for local seasonal options, fostering a diet that
+                supports both global diversity and local agriculture.</p>
+        </div>
+    </div>
+</body>
+
+</html>

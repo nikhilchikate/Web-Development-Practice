@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+</head>
+
+<body>
+    <h1>Functions in JavaScript</h1>
+    <script>
+        console.log("This is JS Function Demo");
+
+        function greet(name, greetText = "Greetings from JavaScript") {
+            let localScopeName = "local name";
+            console.log(greetText + " " + name);
+            console.log(name + " is a nice person");
+        }
+
+        greet('Rose ');
+
+        let name1 = "Amol";
+        let name2 = "Priya";
+        let name3 = "Nikhil";
+        let greetText1 = "Good Evening";
+        greet(name3, greetText1);
+        greet(name2, greetText1);
+        greet(name1, greetText1);
+        let returnValue = greet(name3);
+        console.log(returnValue)
+
+        function sum(a, b, c) {
+            let d = a + b + c;
+            return d;
+            // This line will never execute (Unreachable code)
+            // console.log("Function is returned");
+        }
+
+        let returnVal = sum(1, 2, 3);
+        console.log(returnVal)
+
+        console.log(name1 + " is a good boy");
+        console.log(name2 + " is a good girl");
+        console.log(name3 + " is a good boy"); 
+    </script>
+</body>
+
+</html>

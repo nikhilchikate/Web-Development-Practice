@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links & Buttons</title>
+    <style>
+        .container{
+            border: 3px solid blueviolet;
+            background-color: rgb(102, 184, 20);
+            padding: 35px;
+            margin: 40px auto;
+            width: 670px;
+        }
+
+        a{
+            text-decoration: none;
+            color: red;
+        }
+
+        a:hover{
+            color: rgb(5, 0, 0);
+            background-color: rgb(221, 166, 38);
+        }
+
+        a:visited{
+            background-color: pink;
+        }
+
+        a:active{
+            background-color:darkblue;
+        }
+
+        .btn{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:bolder;
+            background-color: grey;
+            padding:10px;
+            border: none;
+            cursor:pointer;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+
+        .btn:hover{
+            color:darkgoldenrod;
+            background-color:rgb(83, 171, 189);
+            border: 3px solid black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Styling Links & Buttons Demo</h1>
+
+    <div class="container" id="mainContainer">
+        <h3>This is my header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A optio amet corporis aut, placeat nam
+            necessitatibus magni repudiandae eligendi aspernatur soluta! Molestiae eligendi numquam perspiciatis
+            laboriosam ipsam dolorem qui esse!</p>
+        <a href="https://google.com" class="btn" target="_blank">Go to Google</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>

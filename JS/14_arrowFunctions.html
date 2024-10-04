@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo: Arrow Functions In JavaScript</title>
+</head>
+
+<body>
+    <h1>JavaScript Demo: Arrow Functions In JavaScript</h1>
+    <script>
+        console.log('JavaScript Demo: Arrow Functions In JavaScript');
+
+        //Arrow function
+        let greet = () => {
+            console.log('Good morning using Arrow Function');
+        }
+        greet();
+
+        let greet1 = () => console.log('Good morning Friends using Arrow Function');
+        greet1();
+
+        let mul = (a, b) => {
+            console.log("Multiply opeartion result : " + a * b);
+        }
+        mul(3, 4);
+
+
+        let sum = (a, b) => {
+            return a + b;
+        };
+        console.log("Sum opeartion result : " + sum(4, 5));
+
+        let sum1 = (a, b) => a + b;
+        console.log("Summation opeartion result : " + sum1(6, 8));
+
+        let half = a => a / 2;
+        console.log("Halving opeartion result : " + half(24));
+
+        function greet2() {
+            console.log('Good morning using old method');
+        }
+        greet2();
+
+        // setTimeout(() => {
+        //     console.log("We are inside settimeout");
+        // }, 3000);
+
+        setTimeout(() => {
+            console.log('Inside SetTimeOut');
+        }, 2000);
+
+        let obj1 = {
+            greeting: "Good Evening",
+            names: ["Nikhil", "Amol", "Abhijeet", "Ramesh"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting + " Welcome " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM, REM, VH & VW Demo</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        .container {
+            width: 400px;
+            /* height: 344px; */
+            height: 82vh;
+            width: 98vw;
+            font-size: 10px;
+            border: 3px solid blue;
+            background-color: bisque;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            font-size: 3em;
+            padding: 3em;
+        }
+
+        #second {
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create Responsive website Demo</h1>
+    <!-- <ul>Various Ways To Achieve Responsive Design :
+        <li>By using rem/vh/vw units over pixels.</li>
+        <li>By using max-width/max-height.</li>
+        <li>Using CSS Media Queries.</li>
+        <li>Setting up the viewport.</li>
+    </ul>
+    <br><br> -->
+
+    <div class="container">
+        <h1 id="first">This is my first heading</h1>
+        <h1 id="second">This is my second heading</h1>
+        <h1 id="third">This is my third heading</h1>
+    </div>
+
+</body>
+
+</html>
